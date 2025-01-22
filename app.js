@@ -8,7 +8,7 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const userModel = require("./models/users")
 let secret_key = process.env.SECRET_KEY
-let port = process.env.PORT
+let port = process.env.PORT || 3000
 
 app.use(express.json())
 
