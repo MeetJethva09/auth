@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    padding: 50px;
+}
+input{
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: rgb(151, 135, 135);
+    font-size: 20px;
+    margin-left: 8px;
+    outline: none;
+}
+.btn{
+    padding: 12px;
+    width: 110px;
+    background-color: blueviolet;
+    color: black;
+    margin-left: 25px;
+    width: 130px;
+}
+.btn:hover{
+    cursor: pointer;
+}
