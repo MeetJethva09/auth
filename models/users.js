@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
- const mongoUrl = mongoose.connect(`mongodb://127.0.0.1:27017/authtest`)
+ const mongoUrl = `mongodb://127.0.0.1:27017/authtest`
+
+ mongoose.connect(mongoUrl)
 
 let userSchema = mongoose.Schema({
     username : String,
