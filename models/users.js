@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 //  const mongoUrl = `mongodb://127.0.0.1:27017/authtest`
+mongo_url = process.env.MONGO_URI
+ 
 
- const mongoURI = "mongodb+srv://auth:marco@1001@cluster0.7ow2g.mongodb.net/"
-
- mongoose.connect(mongoURI)
+ mongoose.connect(mongo_url)
 
 let userSchema = mongoose.Schema({
     username : String,

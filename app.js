@@ -1,12 +1,14 @@
 const express = require('express')
 const app = express()
+require('dotenv').config()
 const cookie = require("cookie-parser")
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const userModel = require("./models/users")
-let secret_key = 'meet!@*1001'
+let secret_key = process.env.SECRET_KEY
+let port = process.env.PORT
 
 app.use(express.json())
 
@@ -71,6 +73,6 @@ app.post("/logincheck",async (req,res)=>{
     
 })
 
-app.listen(3000)
+app.listen(port)
 
 
